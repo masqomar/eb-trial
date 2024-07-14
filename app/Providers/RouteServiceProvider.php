@@ -28,6 +28,7 @@ class RouteServiceProvider extends ServiceProvider
 
         Route::domain('{subdomain}.affiliate.test')
             ->group(base_path('routes/sub_domain.php'));
+            
         $this->routes(function () {
             Route::middleware('api')
                 ->prefix('api')
